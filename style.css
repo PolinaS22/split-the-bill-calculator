@@ -1,0 +1,128 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1600628421066-f6bda6a7b976?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZvb2QlMjBmcmllbmRzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color:rgba(94, 97, 93, 0.9);
+    height: 100vh;
+}
+
+#container {
+    background-color:rgba(94, 97, 93, 0.9);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 725px;
+    border-radius: 40px;
+    color: white;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    margin: 20px;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #f7dbf0; 
+    align-self: center;
+}
+input {
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+    width: 200px;
+    background-color: #ffffffde;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#addTip {
+    background-color:#78DEC7;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+.optionTip {
+    border-radius: 15px;
+    padding: 3px;
+    background-color: #88e4ceab;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 5px;
+    cursor: pointer;
+}
+option {
+    background-color: #439e8750;
+}
+
+#btn {
+    background-color: #F7DBF0;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#tip {
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+}
+
+#showTotalAmountToPay {
+    display: flex;
+    justify-content: space-around;
+}
+
+#billSplit, #totalTip, #totalAmount {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(147, 198, 142, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+
+
+@media all and (max-width:600px) {
+    #container {
+        width: 100%;
+        height: 800px;
+        border-radius: 40px;
+        color: white;
+    }
+    form {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    #btn, #addTip {
+        font-size: 14px;
+    }
+    #showTotalAmountToPay {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    #billSplit, #totalTip, #totalAmount {
+        margin: 10px;
+        padding: 25px;
+    }
+    .top-border {
+        margin-top: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
